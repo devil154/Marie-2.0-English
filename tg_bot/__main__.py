@@ -26,7 +26,7 @@ This is my [source code](https://github.com/TGExplore/Marie-2.0-English),
 For more commands click /help...
 
 """
-
+BOT_IMG = "https://telegra.ph/file/c833c6bd23eedb76eabf0.jpg"
 HELP_STRINGS = """
 
 Hello! my name *{}*.
@@ -135,11 +135,11 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
+            update.effective_message.reply_text(BOT_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("waked up😏😏😏")
+        update.effective_message.reply_text("I am alive")
 
 
 # for test purposes
