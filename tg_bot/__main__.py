@@ -19,7 +19,9 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 hoi {}, my name is {}! I am group manager bot 
+
 I help u to maintain ur group
+
 My support group @fateunion
 This is my [source code](https://github.com/TGExplore/Marie-2.0-English),
 
